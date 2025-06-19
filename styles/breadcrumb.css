@@ -1,25 +1,22 @@
 /* Breadcrumb Styles */
 .breadcrumb {
-  background-color: #FFFFFF !important;
-  background: #FFFFFF !important;
-  opacity: 1 !important;
+  background-color: #FFFFFF;
   position: fixed;
-  top: calc(var(--nav-height) - 1px); /* Adjust to eliminate gap */
+  top: var(--nav-height);
   left: 0;
   right: 0;
   z-index: 999;
   height: var(--breadcrumb-height);
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
   display: flex;
   align-items: center;
 }
 
 .breadcrumb-container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 24px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -29,23 +26,26 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
   margin: 0;
   padding: 0;
+  align-items: center;
 }
 
 .breadcrumb-item {
   color: #6B7280;
-  font-size: 0.9rem;
+  font-size: 0.875rem;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
+  line-height: 1.2;
 }
 
 .breadcrumb-item a {
   color: #13294B;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color 0.2s ease;
+  font-weight: 500;
 }
 
 .breadcrumb-item a:hover {
@@ -53,11 +53,13 @@
 }
 
 .breadcrumb-separator {
-  color: #6B7280;
+  color: #9CA3AF;
+  font-size: 0.75rem;
 }
 
 .breadcrumb-item:last-child {
   color: #256BA2;
+  font-weight: 500;
 }
 
 .breadcrumb-item:last-child .breadcrumb-separator {
@@ -65,19 +67,15 @@
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-  .breadcrumb {
-    height: var(--breadcrumb-height);
-    top: calc(var(--nav-height) - 1px);
-  }
-
-  .breadcrumb-item {
-    font-size: 0.8rem;
+@media (max-width: 1024px) {
+  .breadcrumb-container {
+    padding: 0 20px;
   }
 }
 
-@media (max-width: 480px) {
-  .breadcrumb-container {
-    padding: 0 15px;
+@media (max-width: 768px) {
+  /* Hide breadcrumb completely on mobile */
+  .breadcrumb {
+    display: none;
   }
 }

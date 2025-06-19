@@ -347,6 +347,7 @@
         background: white !important;
       }
 
+      /* Default horizontal layout (if needed for other sections) */
       .service-detail-visual {
         flex: 0 0 55% !important; /* Make image area 55% width */
         max-width: 55% !important;
@@ -359,6 +360,42 @@
 
       .service-detail-item {
         gap: 3% !important; /* Add gap between image and content */
+      }
+
+      /* Vertical layout for service detail items */
+      .service-detail-vertical {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 2rem !important;
+        margin-bottom: 4rem !important;
+      }
+
+      .service-detail-vertical .service-detail-content {
+        flex: none !important;
+        max-width: 100% !important;
+        width: 100% !important;
+      }
+
+      .service-detail-vertical .service-detail-visual {
+        flex: none !important;
+        max-width: 85% !important;
+        width: 85% !important;
+        margin: 0 auto !important;
+      }
+
+      .service-detail-vertical .service-detail-image {
+        width: 100% !important;
+        border-radius: 12px !important;
+        overflow: hidden !important;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15) !important;
+      }
+
+      .service-detail-vertical .service-detail-image img {
+        width: 100% !important;
+        height: 400px !important;
+        object-fit: cover !important;
+        object-position: center !important;
+        display: block !important;
       }
 
       .service-detail-features {
@@ -378,6 +415,269 @@
         text-align: center !important;
         font-size: 0.9rem !important;
         line-height: 1.2 !important;
+      }
+
+      /* Mobile responsiveness fixes for text padding */
+      @media (max-width: 768px) {
+        .container {
+          padding: 0 12px !important;
+        }
+
+        .service-details-section {
+          padding: 20px 0 !important;
+        }
+
+        .service-detail-content {
+          padding: 0 !important;
+          margin: 0 !important;
+          max-width: 100% !important;
+        }
+
+        .service-detail-description {
+          margin: 0 !important;
+          padding: 0 !important;
+          margin-bottom: 16px !important;
+        }
+
+        .service-detail-icon {
+          margin: 0 0 16px 0 !important;
+        }
+
+        /* Vertical layout mobile adjustments */
+        .service-detail-vertical {
+          gap: 1.5rem !important;
+          margin-bottom: 3rem !important;
+        }
+
+        .service-detail-vertical .service-detail-visual {
+          max-width: 95% !important;
+          width: 95% !important;
+        }
+
+        .service-detail-vertical .service-detail-image img {
+          height: 300px !important;
+        }
+
+        /* Feature buttons - single column on mobile */
+        .service-detail-features {
+          display: flex !important;
+          flex-direction: column !important;
+          gap: 8px !important;
+          grid-template-columns: none !important;
+          grid-template-rows: none !important;
+        }
+
+        .detail-feature {
+          width: 100% !important;
+          text-align: center !important;
+        }
+
+        .solution-content {
+          padding: 1.5rem !important;
+        }
+
+        .section-header {
+          padding: 0 !important;
+        }
+
+        .section-subtitle {
+          margin: 0 !important;
+          padding: 0 !important;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .container {
+          padding: 0 8px !important;
+        }
+
+        .service-details-section {
+          padding: 15px 0 !important;
+        }
+
+        .service-detail-content {
+          padding: 0 !important;
+          margin: 0 !important;
+        }
+
+        .service-detail-description {
+          font-size: 0.95rem !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          margin-bottom: 16px !important;
+        }
+
+        .service-detail-icon {
+          width: 56px !important;
+          height: 56px !important;
+          font-size: 1.3rem !important;
+          margin-bottom: 12px !important;
+        }
+
+        .service-detail-title {
+          margin-bottom: 12px !important;
+        }
+
+        /* Vertical layout small mobile adjustments */
+        .service-detail-vertical {
+          gap: 1rem !important;
+          margin-bottom: 2rem !important;
+        }
+
+        .service-detail-vertical .service-detail-visual {
+          max-width: 98% !important;
+          width: 98% !important;
+        }
+
+        .service-detail-vertical .service-detail-image img {
+          height: 250px !important;
+        }
+
+        .solution-content {
+          padding: 1rem !important;
+        }
+
+        .solution-description {
+          margin: 0 !important;
+          padding: 0 !important;
+        }
+
+        .section-header {
+          padding: 0 !important;
+          margin-bottom: 20px !important;
+        }
+
+        .section-subtitle {
+          margin: 0 !important;
+          padding: 0 !important;
+          font-size: 1rem !important;
+        }
+
+        /* Feature buttons - single column on small mobile */
+        .service-detail-features {
+          display: flex !important;
+          flex-direction: column !important;
+          gap: 6px !important;
+          grid-template-columns: none !important;
+          grid-template-rows: none !important;
+        }
+
+        .detail-feature {
+          width: 100% !important;
+          text-align: center !important;
+          font-size: 0.75rem !important;
+          padding: 6px 10px !important;
+        }
+      }
+
+      /* Process Flow Fixes - Uniform Card Sizes */
+      .process-step {
+        min-height: 180px !important;
+        max-width: 200px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        padding: 20px !important;
+      }
+
+      .process-step h3 {
+        margin: 16px 0 12px 0 !important;
+        font-size: 1.25rem !important;
+        line-height: 1.2 !important;
+      }
+
+      .process-step p {
+        margin: 0 !important;
+        font-size: 0.9rem !important;
+        line-height: 1.4 !important;
+        text-align: center !important;
+        flex-grow: 1 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+      }
+
+      /* Stats Grid Mobile - Single Column - Full Container Width */
+      @media (max-width: 768px) {
+        .stats-grid {
+          grid-template-columns: 1fr !important;
+          gap: 24px !important;
+        }
+
+        .stat-item {
+          width: 100% !important;
+          margin: 0 auto !important;
+        }
+
+        /* Process Flow Mobile - Full Container Width */
+        .process-flow {
+          flex-direction: column !important;
+          gap: 24px !important;
+        }
+
+        .process-step {
+          min-height: 160px !important;
+          max-width: 100% !important;
+          width: 100% !important;
+          margin: 0 auto !important;
+        }
+
+        .process-connector {
+          width: 2px !important;
+          height: 24px !important;
+          margin: 0 auto !important;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .stats-grid {
+          grid-template-columns: 1fr !important;
+          gap: 20px !important;
+        }
+
+        .stat-item {
+          width: 100% !important;
+          margin: 0 auto !important;
+          padding: 24px 16px !important;
+        }
+
+        .stat-icon {
+          width: 120px !important;
+          height: 120px !important;
+        }
+
+        .stat-number {
+          font-size: 2.5rem !important;
+        }
+
+        .stat-label {
+          font-size: 1rem !important;
+        }
+
+        .stat-subtitle {
+          font-size: 0.85rem !important;
+        }
+
+        /* Process Flow Small Mobile - Full Container Width */
+        .process-flow {
+          flex-direction: column !important;
+          gap: 20px !important;
+        }
+
+        .process-step {
+          min-height: 140px !important;
+          max-width: 100% !important;
+          width: 100% !important;
+          margin: 0 auto !important;
+          padding: 20px 16px !important;
+        }
+
+        .process-connector {
+          width: 2px !important;
+          height: 20px !important;
+          margin: 0 auto !important;
+        }
       }
     </style>
   </head>
@@ -655,7 +955,7 @@
           </div>
 
           <!-- Project Performance Detail -->
-          <div class="service-detail-item service-detail-left">
+          <div class="service-detail-item service-detail-vertical">
             <div class="service-detail-content">
               <div class="service-detail-icon">
                 <i class="fas fa-chart-line"></i>
@@ -713,16 +1013,7 @@
           </div>
 
           <!-- Data Transformation Detail -->
-          <div class="service-detail-item service-detail-left">
-            <div class="service-detail-visual">
-              <div class="service-detail-image">
-                <img
-                  src="../images/isg-main-dt-detail.jpg"
-                  alt="Data Transformation"
-                />
-                <div class="service-detail-overlay"></div>
-              </div>
-            </div>
+          <div class="service-detail-item service-detail-vertical">
             <div class="service-detail-content">
               <div class="service-detail-icon">
                 <i class="fas fa-database"></i>
@@ -766,10 +1057,19 @@
                 >
               </div>
             </div>
+            <div class="service-detail-visual">
+              <div class="service-detail-image">
+                <img
+                  src="../images/isg-main-dt-detail.jpg"
+                  alt="Data Transformation"
+                />
+                <div class="service-detail-overlay"></div>
+              </div>
+            </div>
           </div>
 
           <!-- Cybersecurity Detail -->
-          <div class="service-detail-item service-detail-left">
+          <div class="service-detail-item service-detail-vertical">
             <div class="service-detail-content">
               <div class="service-detail-icon">
                 <i class="fas fa-shield-alt"></i>

@@ -33,10 +33,11 @@
   align-items: center;
   text-decoration: none;
   transition: transform var(--transition-normal);
+  gap: 12px;
 }
 
 .navbar-brand:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .navbar-brand img {
@@ -48,6 +49,29 @@
 
 .navbar-brand:hover img {
   filter: brightness(0) invert(1) drop-shadow(0 0 10px rgba(49, 61, 75, 0.5));
+}
+
+.nav-branding {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.nav-division {
+  color: var(--white);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.nav-tagline {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.7rem;
+  font-weight: 500;
+  line-height: 1;
+  font-style: italic;
 }
 
 /* Navigation Menu */
@@ -269,6 +293,21 @@
 }
 
 @media (max-width: 768px) {
+  /* Make logo smaller on mobile */
+  .navbar-brand img {
+    height: 26px;
+  }
+  
+  /* Adjust branding text proportionally */
+  .nav-division {
+    font-size: 0.8rem;
+    letter-spacing: 0.8px;
+  }
+  
+  .nav-tagline {
+    font-size: 0.65rem;
+  }
+  
   .navbar-toggler {
     display: flex;
   }
@@ -281,7 +320,7 @@
     background: var(--primary-color);
     flex-direction: column;
     align-items: stretch;
-    padding: 20px 0;
+    padding: 16px 0;
     transform: translateY(-100%);
     opacity: 0;
     visibility: hidden;
@@ -289,6 +328,7 @@
     max-height: calc(100vh - var(--nav-height));
     overflow-y: auto;
     box-shadow: var(--shadow-xl);
+    z-index: 998;
   }
   
   .navbar-collapse.show {
@@ -308,21 +348,24 @@
   }
   
   .nav-link {
-    padding: 16px 24px;
+    padding: 14px 20px;
     border-radius: 0;
     justify-content: flex-start;
-    font-size: 1rem;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
   }
   
   .nav-link:hover {
-    background: rgba(49, 61, 75, 0.1);
+    background: rgba(49, 61, 75, 0.15);
     transform: none;
   }
   
   .dropdown-menu {
     position: static;
     width: 100%;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(0, 0, 0, 0.1);
     box-shadow: none;
     border: none;
     border-radius: 0;
@@ -331,31 +374,57 @@
     visibility: visible;
     transform: none;
     margin-top: 0;
+    display: none;
   }
   
-  .dropdown-item {
-    padding: 12px 40px;
-    color: rgba(255, 255, 255, 0.8);
-    border-left: none;
+  .dropdown.show .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu .dropdown-section {
+    padding: 8px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
   
+  .dropdown-menu .dropdown-section:last-child {
+    border-bottom: none;
+  }
+  
+  .dropdown-menu .dropdown-section h4 {
+    padding: 8px 20px;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.05);
+    border-left: 2px solid var(--accent-blue);
+  }
+  
+  .dropdown-item {
+    padding: 10px 32px;
+    color: rgba(255, 255, 255, 0.8);
+    border-left: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
   .dropdown-item:hover {
-    background: rgba(49, 61, 75, 0.1);
+    background: rgba(49, 61, 75, 0.15);
     color: var(--white);
     transform: none;
   }
   
   .nav-cta {
-    margin: 20px 24px 0;
-    width: calc(100% - 48px);
+    margin: 16px 20px 0;
+    width: calc(100% - 40px);
   }
   
   .nav-cta .btn {
     width: 100%;
     justify-content: center;
-    padding: 16px 20px;
-    font-size: 1rem;
+    padding: 14px 20px;
+    font-size: 0.95rem;
   }
 }
 
@@ -364,21 +433,41 @@
     padding: 0 16px;
   }
   
+  .navbar-brand {
+    gap: 8px;
+  }
+  
   .navbar-brand img {
-    height: 36px;
+    height: 22px;
+  }
+  
+  .nav-division {
+    font-size: 0.7rem;
+    letter-spacing: 0.5px;
+  }
+  
+  .nav-tagline {
+    font-size: 0.6rem;
   }
   
   .nav-link {
-    padding: 14px 20px;
+    padding: 12px 16px;
+    font-size: 0.9rem;
   }
   
   .dropdown-item {
-    padding: 10px 32px;
+    padding: 8px 24px;
+    font-size: 0.85rem;
   }
   
   .nav-cta {
-    margin: 16px 20px 0;
-    width: calc(100% - 40px);
+    margin: 12px 16px 0;
+    width: calc(100% - 32px);
+  }
+  
+  .nav-cta .btn {
+    padding: 12px 16px;
+    font-size: 0.9rem;
   }
 }
 
