@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      K2 Consulting | Integrated Solutions Group - Critical Path Controls
+    </title>
+    <meta
+      name="description"
+      content="K2 Consulting Integrated Solutions Group delivers proven project performance, data transformation, and cybersecurity solutions for complex programs."
+    />
+    <meta
+      name="keywords"
+      content="project management, consulting, EVMS, earned value management, data analytics, cybersecurity, CMMC, project controls, critical path"
+    />
+
+    <!-- Favicons -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/site-icons/32_32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../images/site-icons/192_192.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../images/site-icons/180_180.png"
+    />
+
+    <!-- Preload critical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/navigation.css" />
+    <link rel="stylesheet" href="../styles/breadcrumb.css" />
+    <link rel="stylesheet" href="../styles/services.css" />
+    <link rel="stylesheet" href="../styles/modal.css" />
+    <link rel="stylesheet" href="../styles/forms.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "K2 Consulting",
+        "description": "Integrated Solutions Group providing project management, data transformation, and cybersecurity services",
+        "url": "https://k2consulting.com/",
+        "foundingDate": "1999",
+        "numberOfEmployees": "25+",
+        "serviceArea": {
+          "@type": "Place",
+          "name": "United States"
+        }
+      }
+    </script>
+
+    <!-- Custom styles for simplified service cards and color scheme -->
+    <style>
+      /* Color Variables */
+      :root {
+        --sky-blue: #256ba2;
+        --slate-grey: #313d4b;
+        --light-grey: #f1f0ee;
+        --white: #ffffff;
+      }
+
+      /* Make solution cards taller and improve visibility */
+      .solution-card {
+        min-height: 600px !important;
+        height: auto !important;
+      }
+
+      /* Increase text size throughout the cards */
+      .solution-title {
+        font-size: 1.5rem !important;
+        margin-bottom: 1rem !important;
+      }
+
+      .solution-description {
+        font-size: 1.1rem !important;
+        line-height: 1.6 !important;
+        margin-bottom: 1.5rem !important;
+      }
+
+      /* Style service links as column layout */
+      .solution-services {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 0.75rem !important;
+        margin-top: 1.5rem !important;
+      }
+
+      .service-link {
+        display: flex !important;
+        align-items: center !important;
+        padding: 0.75rem 1rem !important;
+        background: rgba(255, 255, 255, 0.25) !important;
+        border-radius: 8px !important;
+        text-decoration: none !important;
+        color: white !important;
+        font-size: 1.1rem !important;
+        font-weight: 600 !important;
+        transition: all 0.3s ease !important;
+        border: 1px solid rgba(255, 255, 255, 0.3) !important;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5) !important;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+      }
+
+      .service-link:hover {
+        background: rgba(255, 255, 255, 0.35) !important;
+        transform: translateX(5px) !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+      }
+
+      .service-link i {
+        margin-right: 0.75rem !important;
+        font-size: 1.1rem !important;
+        width: 20px !important;
+      }
+
+      /* Ensure content is properly spaced */
+      .solution-content {
+        padding: 2rem !important;
+        height: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+      }
+
+      /* Remove any hover effects or transitions */
+      .solution-card:hover {
+        transform: none !important;
+      }
+
+      /* Ensure proper spacing for solution icon */
+      .solution-icon {
+        font-size: 3rem !important;
+        margin-bottom: 1.5rem !important;
+      }
+
+      /* Color fixes - very targeted to avoid affecting navigation */
+
+      /* Hero section "Our Solutions" button - use slate grey */
+      .service-hero .btn-accent {
+        background-color: var(--slate-grey) !important;
+        border-color: var(--slate-grey) !important;
+        color: var(--white) !important;
+      }
+
+      .service-hero .btn-accent:hover {
+        background-color: #252b35 !important;
+        border-color: #252b35 !important;
+      }
+
+      /* Hero section "Contact Us" button - keep white outline */
+      .service-hero .btn-outline {
+        background-color: transparent !important;
+        border-color: var(--white) !important;
+        color: var(--white) !important;
+      }
+
+      .service-hero .btn-outline:hover {
+        background-color: var(--white) !important;
+        color: var(--slate-grey) !important;
+      }
+
+      /* Final CTA section button - use slate grey */
+      .final-cta-section .btn-accent {
+        background-color: var(--slate-grey) !important;
+        border-color: var(--slate-grey) !important;
+        color: var(--white) !important;
+      }
+
+      .final-cta-section .btn-accent:hover {
+        background-color: #252b35 !important;
+        border-color: #252b35 !important;
+      }
+
+      /* Page content accent colors - use sky blue */
+      .title-accent {
+        color: var(--sky-blue) !important;
+      }
+
+      .section-title .title-main {
+        color: var(--slate-grey) !important;
+      }
+
+      .stat-number {
+        color: var(--sky-blue) !important;
+      }
+
+      .process-step .step-icon {
+        background-color: var(--sky-blue) !important;
+        color: var(--white) !important;
+      }
+
+      .trust-item i {
+        color: var(--sky-blue) !important;
+      }
+
+      /* Service detail feature buttons - use slate grey */
+      .detail-feature {
+        background-color: var(--slate-grey) !important;
+        border-color: var(--slate-grey) !important;
+        color: var(--white) !important;
+      }
+
+      .detail-feature:hover {
+        background-color: #252b35 !important;
+        border-color: #252b35 !important;
+      }
+
+      /* Content area links only - exclude navigation completely */
+      main
+        a:not(.btn):not(.service-link):not(.detail-feature):not(
+          [class*="nav"]
+        ):not([class*="menu"]) {
+        color: var(--sky-blue) !important;
+      }
+
+      main
+        a:not(.btn):not(.service-link):not(.detail-feature):not(
+          [class*="nav"]
+        ):not([class*="menu"]):hover {
+        color: #1e5a87 !important;
+      }
+
+      /* Dark blue overlay over the background image */
+      body main section.service-hero::before {
+        content: "" !important;
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        background: rgba(19, 41, 75, 0.8) !important;
+        z-index: 10 !important;
+        pointer-events: none !important;
+      }
+
+      /* Make service-hero position relative to contain the background and override main.css gradient */
+      body .service-hero,
+      main .service-hero,
+      section.service-hero {
+        position: relative !important;
+        overflow: hidden !important;
+        background: none !important;
+        background-image: none !important;
+        background-color: transparent !important;
+      }
+
+      /* Force the background image to show with maximum specificity */
+      body main section.service-hero {
+        background: #13294b url("../images/isg-main-hero.jpg") center
+          center/cover no-repeat !important;
+        min-height: 60vh !important;
+      }
+
+      /* Ensure hero content is above the background and overlay */
+      .service-hero .container {
+        position: relative !important;
+        z-index: 20 !important;
+      }
+
+      /* Remove all hero animations completely - override services.css */
+      .service-hero .hero-bg-animation,
+      .service-hero .floating-shape,
+      .service-hero .hero-bg-animation .floating-shape,
+      .service-hero .floating-shape.shape-1,
+      .service-hero .floating-shape.shape-2,
+      .service-hero .floating-shape.shape-3,
+      .hero-bg-animation,
+      .floating-shape,
+      .floating-shape.shape-1,
+      .floating-shape.shape-2,
+      .floating-shape.shape-3 {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        animation: none !important;
+        transform: none !important;
+      }
+
+      /* Also disable the service-hero::before animation from services.css */
+      .service-hero::before {
+        animation: none !important;
+        display: none !important;
+      }
+
+      /* Force browser cache refresh */
+      .service-hero * {
+        -webkit-transform: translateZ(0) !important;
+        transform: translateZ(0) !important;
+      }
+
+      /* Style stat icon images - optimized size and remove animations */
+      .stat-icon {
+        width: 180px !important;
+        height: 180px !important;
+        animation: none !important;
+        transform: none !important;
+      }
+
+      .stat-icon img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        border-radius: 12px !important;
+      }
+
+      /* Remove all stat item animations */
+      .stat-item {
+        animation: none !important;
+        transform: none !important;
+      }
+
+      .stat-item:hover {
+        animation: none !important;
+        transform: none !important;
+      }
+
+      /* Hero text styling fixes */
+      .service-icon {
+        display: none !important;
+      }
+
+      /* Service Details Section Layout Improvements */
+      .service-details-section {
+        background: white !important;
+      }
+
+      .solutions-grid-section {
+        background: white !important;
+      }
+
+      .service-detail-visual {
+        flex: 0 0 55% !important; /* Make image area 55% width */
+        max-width: 55% !important;
+      }
+
+      .service-detail-content {
+        flex: 0 0 42% !important; /* Make content area 42% width */
+        max-width: 42% !important;
+      }
+
+      .service-detail-item {
+        gap: 3% !important; /* Add gap between image and content */
+      }
+
+      .service-detail-features {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        grid-template-rows: 1fr 1fr !important;
+        gap: 12px !important;
+        margin-bottom: 20px !important;
+      }
+
+      .detail-feature {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 12px 16px !important;
+        min-height: 48px !important;
+        text-align: center !important;
+        font-size: 0.9rem !important;
+        line-height: 1.2 !important;
+      }
+    </style>
+  </head>
+  <body data-root-path="../">
+    <!-- Include centralized navigation -->
+    <div id="navigation"></div>
+
+    <!-- Include breadcrumb -->
+    <div id="breadcrumb"></div>
+
+    <main>
+      <!-- Hero Section -->
+      <section
+        class="service-hero"
+        style="
+          background: #13294b url('../images/isg-main-hero.jpg') center
+            center/cover no-repeat !important;
+        "
+      >
+        <!-- Blue Overlay -->
+        <div
+          class="hero-overlay"
+          style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(19, 41, 75, 0.8);
+            z-index: 10;
+            pointer-events: none;
+          "
+        ></div>
+
+        <div class="container">
+          <div class="hero-content">
+            <!-- Service Icon -->
+            <div class="service-icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+
+            <h1 class="hero-title">Integrated Solutions Group</h1>
+            <p class="hero-subtitle">
+              Delivering excellence in project controls, data transformation,
+              and cybersecurity
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats Section -->
+      <section class="stats-showcase">
+        <div class="container">
+          <div class="stats-grid">
+            <div class="stat-item" data-stat="35">
+              <div class="stat-icon">
+                <img
+                  src="../images/isg-main-stats-experience.jpg"
+                  alt="Years of Experience"
+                />
+              </div>
+              <div class="stat-number">0</div>
+              <div class="stat-label">Years of Experience</div>
+              <div class="stat-subtitle">Proven Track Record</div>
+            </div>
+            <div class="stat-item" data-stat="2000">
+              <div class="stat-icon">
+                <img
+                  src="../images/isg-main-stats-projects.jpg"
+                  alt="Projects Completed"
+                />
+              </div>
+              <div class="stat-number">0</div>
+              <div class="stat-label">Public and Private Sector Projects</div>
+              <div class="stat-subtitle">Across All Industries</div>
+            </div>
+            <div class="stat-item" data-stat="95">
+              <div class="stat-icon">
+                <img
+                  src="../images/isg-main-stats-clients.jpg"
+                  alt="Repeat Clients"
+                />
+              </div>
+              <div class="stat-number">0</div>
+              <div class="stat-label">Repeat Clients</div>
+              <div class="stat-subtitle">Choose K2 Again & Again</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Solutions Grid -->
+      <section id="solutions" class="solutions-grid-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">
+              <span class="title-main">Our Core</span>
+              <span class="title-accent">Focus Areas</span>
+            </h2>
+            <p class="section-subtitle">
+              Comprehensive solutions for complex program challenges
+            </p>
+          </div>
+
+          <div class="solutions-grid">
+            <!-- Project Performance Solution -->
+            <div class="solution-card solution-performance">
+              <div class="solution-bg">
+                <img
+                  src="../images/isg-main-pp-detail.jpg"
+                  alt="Project Performance"
+                />
+                <div class="solution-overlay"></div>
+              </div>
+
+              <div class="solution-content">
+                <div class="solution-icon">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <h3 class="solution-title">Project Performance</h3>
+                <p class="solution-description">
+                  Comprehensive project controls services including planning,
+                  scheduling, earned value management, risk management, and
+                  claims support for complex programs.
+                </p>
+
+                <div class="solution-services">
+                  <a
+                    href="isg/performance/planning-scheduling.html"
+                    class="service-link"
+                  >
+                    <i class="fas fa-calendar-check"></i>
+                    <span>Planning & Scheduling</span>
+                  </a>
+                  <a
+                    href="isg/performance/claims-management.html"
+                    class="service-link"
+                  >
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Claims Management</span>
+                  </a>
+                  <a href="isg/performance/evms.html" class="service-link">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>Earned Value Management</span>
+                  </a>
+                  <a
+                    href="isg/performance/risk-management.html"
+                    class="service-link"
+                  >
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <span>Risk Management</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Data Transformation Solution -->
+            <div class="solution-card solution-data">
+              <div class="solution-bg">
+                <img
+                  src="../images/isg-main-dt-detail.jpg"
+                  alt="Data Transformation"
+                />
+                <div class="solution-overlay"></div>
+              </div>
+
+              <div class="solution-content">
+                <div class="solution-icon">
+                  <i class="fas fa-database"></i>
+                </div>
+                <h3 class="solution-title">Data Transformation</h3>
+                <p class="solution-description">
+                  Advanced analytics, Artificial Intelligence/Machine Learning
+                  (AI/ML) solutions, Project Management Information Systems
+                  (PMIS) implementation, and virtual design construction (VDC)
+                  services to optimize project performance through data-driven
+                  insights.
+                </p>
+
+                <div class="solution-services">
+                  <a href="isg/transformation/pmis.html" class="service-link">
+                    <i class="fas fa-database"></i>
+                    <span>PMIS Implementation</span>
+                  </a>
+                  <a
+                    href="isg/transformation/data-analytics.html"
+                    class="service-link"
+                  >
+                    <i class="fas fa-chart-pie"></i>
+                    <span>Data Analytics</span>
+                  </a>
+                  <a href="isg/transformation/ai-ml.html" class="service-link">
+                    <i class="fas fa-robot"></i>
+                    <span>AI/ML Solutions</span>
+                  </a>
+                  <a href="isg/transformation/vdc.html" class="service-link">
+                    <i class="fas fa-cube"></i>
+                    <span>Virtual Design Construction</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cybersecurity Solution -->
+            <div class="solution-card solution-security">
+              <div class="solution-bg">
+                <img
+                  src="../images/isg-main-cyber-detail.jpg"
+                  alt="Cybersecurity"
+                />
+                <div class="solution-overlay"></div>
+              </div>
+
+              <div class="solution-content">
+                <div class="solution-icon">
+                  <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 class="solution-title">Cybersecurity</h3>
+                <p class="solution-description">
+                  Clear and effective protection for construction firms and
+                  government contractors. We help protect your systems and data
+                  with practical, proven cybersecurity solutions including 
+                  Cybersecurity Maturity Model Certification (CMMC)
+                  compliance, security assessments, and 24/7 monitoring.
+                </p>
+
+                <div class="solution-services">
+                  <a
+                    href="isg/cyber/cmmc-preparation.html"
+                    class="service-link"
+                  >
+                    <i class="fas fa-certificate"></i>
+                    <span>CMMC Preparation</span>
+                  </a>
+                  <a
+                    href="isg/cyber/security-assessment.html"
+                    class="service-link"
+                  >
+                    <i class="fas fa-search"></i>
+                    <span>Security Assessment</span>
+                  </a>
+                  <a
+                    href="isg/cyber/risk-management-framework.html"
+                    class="service-link"
+                  >
+                    <i class="fas fa-cogs"></i>
+                    <span>Risk Management Framework</span>
+                  </a>
+                  <a
+                    href="isg/cyber/continuous-monitoring.html"
+                    class="service-link"
+                  >
+                    <i class="fas fa-eye"></i>
+                    <span>Continuous Monitoring</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Service Details Section -->
+      <section class="service-details-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">
+              <span class="title-main">Proven Expertise in</span>
+              <span class="title-accent">Critical Program Areas</span>
+            </h2>
+            <p class="section-subtitle">
+              Delivering results for commercial enterprises, government agencies,
+              contractors, and organizations across all industries
+            </p>
+          </div>
+
+          <!-- Project Performance Detail -->
+          <div class="service-detail-item service-detail-left">
+            <div class="service-detail-content">
+              <div class="service-detail-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <h3 class="service-detail-title">Project Performance</h3>
+              <p class="service-detail-description">
+                K2 develops integrated project control frameworks for complex,
+                multi-phase programs across diverse industries including
+                construction, infrastructure, defense, technology, and
+                manufacturing. Our expertise spans both commercial and
+                government sectors.
+                <br /><br />
+                We specialize in comprehensive project controls including earned
+                value management systems, critical path scheduling, strategic
+                planning, claims resolution, and proactive risk management. Our
+                approach establishes accurate project timelines, resource
+                optimization, work sequencing, and real-time progress
+                transparency that enables informed decision-making.
+                <br /><br />
+                Our expert team continuously monitors and interprets project
+                performance data to identify potential risks early, implement
+                claims resolution strategies, and deliver optimal solutions that
+                keep your programs on schedule and within budget.
+              </p>
+              <div class="service-detail-features">
+                <a
+                  href="isg/performance/planning-scheduling.html"
+                  class="detail-feature"
+                  >Planning & Scheduling</a
+                >
+                <a
+                  href="isg/performance/claims-management.html"
+                  class="detail-feature"
+                  >Claims Resolution & Management</a
+                >
+                <a href="isg/performance/evms.html" class="detail-feature"
+                  >Earned Value Management Systems</a
+                >
+                <a
+                  href="isg/performance/risk-management.html"
+                  class="detail-feature"
+                  >Risk Management</a
+                >
+              </div>
+            </div>
+            <div class="service-detail-visual">
+              <div class="service-detail-image">
+                <img
+                  src="../images/isg-main-pp-detail.jpg"
+                  alt="Project Performance"
+                />
+                <div class="service-detail-overlay"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Data Transformation Detail -->
+          <div class="service-detail-item service-detail-left">
+            <div class="service-detail-visual">
+              <div class="service-detail-image">
+                <img
+                  src="../images/isg-main-dt-detail.jpg"
+                  alt="Data Transformation"
+                />
+                <div class="service-detail-overlay"></div>
+              </div>
+            </div>
+            <div class="service-detail-content">
+              <div class="service-detail-icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <h3 class="service-detail-title">Data Transformation</h3>
+              <p class="service-detail-description">
+                K2 transforms raw data into strategic intelligence that drives
+                better business decisions. Our advanced analytics capabilities
+                serve organizations across all industries, from construction and
+                manufacturing to government agencies and technology companies,
+                helping them unlock the full potential of their data.
+                <br /><br />
+                We specialize in comprehensive Project Management Information
+                Systems (PMIS) implementation and solutions, developing powerful
+                data analytics and visualization tools that provide real-time
+                insights into performance across your entire operation. Our 4D
+                and 5D project models create complete visual project
+                understanding that enhances coordination and decision-making.
+                <br /><br />
+                Our AI solutions include intelligent agents that can interact
+                directly with your data to answer questions and provide insights.
+                Combined with our analytics expertise, these capabilities help
+                organizations optimize resource allocation, improve project
+                outcomes, and gain competitive advantages through data-driven
+                intelligence.
+              </p>
+              <div class="service-detail-features">
+                <a href="isg/transformation/pmis.html" class="detail-feature"
+                  >PMIS Implementation</a
+                >
+                <a
+                  href="isg/transformation/data-analytics.html"
+                  class="detail-feature"
+                  >Data Analytics & Visualization</a
+                >
+                <a href="isg/transformation/ai-ml.html" class="detail-feature"
+                  >AI/ML Solutions</a
+                >
+                <a href="isg/transformation/vdc.html" class="detail-feature"
+                  >Virtual Design Construction</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Cybersecurity Detail -->
+          <div class="service-detail-item service-detail-left">
+            <div class="service-detail-content">
+              <div class="service-detail-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h3 class="service-detail-title">Cybersecurity</h3>
+              <p class="service-detail-description">
+                At K2, we help construction firms and government contractors
+                protect their systems and data with practical, proven
+                cybersecurity solutions. Managing cybersecurity risk isn't just
+                about avoiding setbacks; it's about safeguarding your project's
+                timeline, budget, and sensitive data before threats impact your
+                operations.
+                <br /><br />
+                Our cybersecurity capabilities include CMMC compliance support
+                to get companies ready for Department of Defense requirements,
+                comprehensive security assessments with vulnerability scans and
+                penetration testing, and Risk Management Framework
+                implementation to identify and manage cybersecurity risks.
+                <br /><br />
+                We provide continuous monitoring solutions that keep an eye on
+                your systems 24/7 to catch threats early, along with specialized
+                protection for construction projects including Building
+                Information Modeling (BIM) systems, project management software,
+                and subcontractor data security.
+              </p>
+              <div class="service-detail-features">
+                <a href="isg/cyber/cmmc-preparation.html" class="detail-feature"
+                  >CMMC Preparation</a
+                >
+                <a
+                  href="isg/cyber/security-assessment.html"
+                  class="detail-feature"
+                  >Security Assessment</a
+                >
+                <a
+                  href="isg/cyber/risk-management-framework.html"
+                  class="detail-feature"
+                  >Risk Management Framework</a
+                >
+                <a
+                  href="isg/cyber/continuous-monitoring.html"
+                  class="detail-feature"
+                  >Continuous Monitoring</a
+                >
+              </div>
+            </div>
+            <div class="service-detail-visual">
+              <div class="service-detail-image">
+                <img
+                  src="../images/isg-main-cyber-detail.jpg"
+                  alt="Cybersecurity"
+                />
+                <div class="service-detail-overlay"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Process Flow -->
+      <section class="process-flow-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">
+              <span class="title-accent">Performance Secured.</span>
+            </h2>
+          </div>
+
+          <div class="process-flow">
+            <div class="process-step" data-step="1">
+              <div class="step-icon">
+                <i class="fas fa-search"></i>
+              </div>
+              <h3>Assess</h3>
+              <p>Understand your program challenges and requirements</p>
+            </div>
+
+            <div class="process-connector">
+              <div class="connector-line"></div>
+              <div class="connector-pulse"></div>
+            </div>
+
+            <div class="process-step" data-step="2">
+              <div class="step-icon">
+                <i class="fas fa-drafting-compass"></i>
+              </div>
+              <h3>Plan</h3>
+              <p>Develop integrated solutions and critical paths</p>
+            </div>
+
+            <div class="process-connector">
+              <div class="connector-line"></div>
+              <div class="connector-pulse"></div>
+            </div>
+
+            <div class="process-step" data-step="3">
+              <div class="step-icon">
+                <i class="fas fa-cogs"></i>
+              </div>
+              <h3>Implement</h3>
+              <p>Execute solutions with proven methodologies</p>
+            </div>
+
+            <div class="process-connector">
+              <div class="connector-line"></div>
+              <div class="connector-pulse"></div>
+            </div>
+
+            <div class="process-step" data-step="4">
+              <div class="step-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <h3>Monitor</h3>
+              <p>Provide ongoing support and performance monitoring</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Client Testimonial -->
+      <section class="testimonial-section">
+        <div class="container">
+          <div class="testimonial-carousel" id="testimonialCarousel">
+            <div class="testimonial-items">
+              <div class="testimonial-item active">
+                <div class="testimonial-content">
+                  <p>
+                    "K2 delivered again, ensuring the right framework, structure
+                    and implementation of scheduling...by contributing rapidly
+                    and early in the planning, design development and early
+                    works construction."
+                  </p>
+                  <div class="testimonial-author">
+                    <strong>Sr. Vice President, Aviation</strong>
+                    <span>Engineering News-Record (ENR) Top 15 Contractor</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="final-cta-section">
+        <div class="cta-bg-animation">
+          <div class="cta-shape cta-shape-1"></div>
+          <div class="cta-shape cta-shape-2"></div>
+          <div class="cta-shape cta-shape-3"></div>
+        </div>
+
+        <div class="container">
+          <div class="cta-content">
+            <h2>Ready to Elevate Your Performance?</h2>
+            <p>
+              Contact K2 Consulting to discuss how our Integrated Solutions
+              Group can support your complex program requirements.
+            </p>
+
+            <div class="cta-actions">
+              <a
+                href="#"
+                class="btn btn-accent btn-xl"
+                onclick="window.showGeneralModal ? window.showGeneralModal() : console.error('showGeneralModal function not found'); return false;"
+              >
+                <span class="btn-text">Contact Us Today</span>
+                <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Include footer -->
+    <div id="footer"></div>
+
+    <!-- Include floating contact button -->
+    <div id="floatingContact"></div>
+
+    <!-- Include contact form modals -->
+    <div id="generalContactModal"></div>
+    <div id="projectPerformanceContactModal"></div>
+    <div id="dataTransformationContactModal"></div>
+    <div id="cyberSecurityContactModal"></div>
+
+    <!-- Load scripts -->
+    <script src="../js/main.js"></script>
+    <script src="../js/storage-helper.js"></script>
+    <script src="../js/content-cache.js"></script>
+    <script src="../js/loader.js"></script>
+    <script src="../js/modal.js"></script>
+
+    <!-- Interactive Scripts -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Stats Animation
+        initStatsAnimation();
+
+        // Process Flow Animation
+        initProcessFlow();
+
+        // Service Details Animation
+        initServiceDetailsAnimation();
+      });
+
+      // Stats Animation
+      function initStatsAnimation() {
+        const statItems = document.querySelectorAll(".stat-item");
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const statNumber = entry.target.querySelector(".stat-number");
+                const targetValue = parseInt(entry.target.dataset.stat);
+                animateNumber(statNumber, targetValue);
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.5 }
+        );
+
+        statItems.forEach((item) => observer.observe(item));
+      }
+
+      function animateNumber(element, target) {
+        let current = 0;
+        const increment = target / 100;
+        const timer = setInterval(() => {
+          current += increment;
+          if (current >= target) {
+            current = target;
+            clearInterval(timer);
+          }
+
+          let displayValue = Math.floor(current);
+          if (target >= 1000) {
+            displayValue = displayValue.toLocaleString();
+          }
+          if (
+            element.parentElement
+              .querySelector(".stat-label")
+              .textContent.includes("Clients")
+          ) {
+            displayValue += "%";
+          } else if (target >= 10) {
+            displayValue += "+";
+          }
+
+          element.textContent = displayValue;
+        }, 20);
+      }
+
+      // Process Flow Animation
+      function initProcessFlow() {
+        const steps = document.querySelectorAll(".process-step");
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry, index) => {
+              if (entry.isIntersecting) {
+                setTimeout(() => {
+                  entry.target.classList.add("animate");
+                }, index * 200);
+              }
+            });
+          },
+          { threshold: 0.5 }
+        );
+
+        steps.forEach((step) => observer.observe(step));
+      }
+
+      // Service Details Animation
+      function initServiceDetailsAnimation() {
+        const serviceItems = document.querySelectorAll(".service-detail-item");
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry, index) => {
+              if (entry.isIntersecting) {
+                setTimeout(() => {
+                  entry.target.classList.add("animate");
+                }, index * 300);
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.3 }
+        );
+
+        serviceItems.forEach((item) => observer.observe(item));
+      }
+
+      // Smooth scrolling for solution cards
+      document.querySelectorAll(".solution-btn").forEach((btn) => {
+        btn.addEventListener("click", function (e) {
+          const href = this.getAttribute("href");
+          if (href.startsWith("#")) {
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) {
+              target.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

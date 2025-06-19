@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How to Analyze a Project Schedule Using Deltek Acumen Fuse | Blog | Integrated Solutions Group</title>
+    <meta name="description" content="Learn how to effectively use Deltek Acumen Fuse for comprehensive schedule analysis and quality assessment. This guide covers best practices, common pitfalls, and advanced techniques." />
+    <meta name="keywords" content="Deltek Acumen Fuse, project schedule analysis, schedule diagnostics, project controls, DCMA 14-point assessment" />
+    <meta name="author" content="K2 Consulting Project Controls Team" />
+    <meta name="article:published_time" content="2023-12-15T00:00:00Z" />
+    <meta name="article:section" content="Project Controls" />
+    <meta name="article:tag" content="Schedule Analysis" />
+    
+    <!-- Open Graph meta tags for social sharing -->
+    <meta property="og:title" content="How to Analyze a Project Schedule Using Deltek Acumen Fuse" />
+    <meta property="og:description" content="Learn how to effectively use Deltek Acumen Fuse for comprehensive schedule analysis and quality assessment." />
+    <meta property="og:image" content="../../../images/service-process-analytics.png" />
+    <meta property="og:url" content="https://k2consulting.com/blog/analyze-project-schedule-using-deltek-acumen-fuse.html" />
+    <meta property="og:type" content="article" />
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../images/site-icons/32_32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="../../../images/site-icons/192_192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../images/site-icons/180_180.png" />
+    
+    <!-- Preload critical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../../../styles/main.css" />
+    <link rel="stylesheet" href="../../../styles/navigation.css" />
+    <link rel="stylesheet" href="../../../styles/breadcrumb.css" />
+    <link rel="stylesheet" href="../../../styles/blog.css" />
+    <link rel="stylesheet" href="../../../styles/modal.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Schema.org structured data for articles -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "How to Analyze a Project Schedule Using Deltek Acumen Fuse",
+      "description": "Learn how to effectively use Deltek Acumen Fuse for comprehensive schedule analysis and quality assessment.",
+      "image": "https://k2consulting.com/images/service-process-analytics.png",
+      "author": {
+        "@type": "Organization",
+        "name": "K2 Consulting Project Controls Team"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "K2 Consulting",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://k2consulting.com/images/logo-k2-consulting.svg"
+        }
+      },
+      "datePublished": "2023-12-15",
+      "dateModified": "2023-12-15",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://k2consulting.com/blog/analyze-project-schedule-using-deltek-acumen-fuse.html"
+      }
+    }
+    </script>
+  </head>
+  <body data-page="blog-article" data-root-path="../../..">
+    <!-- Include centralized navigation -->
+    <div id="navigation"></div>
+
+    <!-- Hardcoded breadcrumb for this article -->
+    <div class="breadcrumb">
+      <div class="breadcrumb-container">
+        <ul class="breadcrumb-list">
+          <li class="breadcrumb-item">
+            <a href="https://www.k2consulting.com">Home</a>
+            <span class="breadcrumb-separator">/</span>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="../../../pages/isg.html">Integrated Solutions Group</a>
+            <span class="breadcrumb-separator">/</span>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="../../../pages/isg/blog.html">Blog</a>
+            <span class="breadcrumb-separator">/</span>
+          </li>
+          <li class="breadcrumb-item">
+            How to Analyze a Project Schedule Using Deltek Acumen Fuse
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <main>
+      <!-- Article Hero Section -->
+      <section class="article-hero">
+        <div class="article-hero-background">
+          <img src="../../../images/service-process-analytics.png" alt="Project Schedule Analysis" />
+          <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="container">
+          <div class="article-hero-content">
+            <div class="article-category">
+              <i class="fas fa-chart-gantt"></i>
+              <span>Project Controls</span>
+            </div>
+            
+            <h1 class="article-title">How to Analyze a Project Schedule Using Deltek Acumen Fuse</h1>
+            
+            <div class="article-meta">
+              <div class="meta-item">
+                <i class="fas fa-calendar"></i>
+                <span>December 15, 2023</span>
+              </div>
+              <div class="meta-item">
+                <i class="fas fa-clock"></i>
+                <span>8 min read</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Article Content -->
+      <article class="article-content">
+        <div class="container">
+          <div class="article-body-simple">
+            <!-- Simple Article Content -->
+            <p class="lead-paragraph">
+              Deltek Acumen Fuse is a powerful schedule diagnostics tool that helps project managers and schedulers identify and resolve potential issues in their project schedules. In this comprehensive guide, we'll explore how to effectively use Acumen Fuse for schedule analysis.
+            </p>
+
+            <h2>Understanding Acumen Fuse Metrics</h2>
+            <p>
+              Acumen Fuse provides a comprehensive set of metrics to evaluate schedule quality. These metrics are organized into different categories:
+            </p>
+            <ul>
+              <li><strong>Logic</strong> - Evaluates the network logic and relationships between activities</li>
+              <li><strong>Duration</strong> - Analyzes activity durations and identifies potential issues</li>
+              <li><strong>Resources</strong> - Reviews resource assignments and allocation</li>
+              <li><strong>Cost</strong> - Examines cost loading and distribution</li>
+              <li><strong>Risk</strong> - Assesses schedule risk and uncertainty</li>
+            </ul>
+
+            <h2>Key Steps in Schedule Analysis</h2>
+            <p>
+              To effectively analyze your project schedule using Acumen Fuse, follow these key steps:
+            </p>
+            <ol>
+              <li>Import your schedule file (supports various formats including Primavera P6 and Microsoft Project)</li>
+              <li>Run the standard metrics analysis to get an overview of schedule health</li>
+              <li>Review the S1 // DCMA 14-point Assessment for compliance evaluation</li>
+              <li>Analyze specific metric categories based on project needs and requirements</li>
+              <li>Generate detailed reports for stakeholders and project documentation</li>
+            </ol>
+
+            <h2>Best Practices for Schedule Analysis</h2>
+            <p>
+              When analyzing schedules with Acumen Fuse, consider these best practices:
+            </p>
+            <ul>
+              <li>Establish consistent thresholds for metrics across projects</li>
+              <li>Document any deviations from standard metrics</li>
+              <li>Regular schedule health checks using consistent metrics</li>
+              <li>Use benchmark data to compare against industry standards</li>
+              <li>Maintain a log of improvements made based on analysis results</li>
+            </ul>
+
+            <h2>Common Schedule Issues and Solutions</h2>
+            <p>
+              Through Acumen Fuse analysis, you can identify and address common schedule issues:
+            </p>
+            <ul>
+              <li><strong>Missing logic or incorrect relationships</strong> - Identify activities with missing predecessors or successors that can impact critical path analysis</li>
+              <li><strong>Unrealistic activity durations</strong> - Flag activities with extremely short or long durations that may indicate planning issues</li>
+              <li><strong>Overuse of constraints</strong> - Detect excessive use of date constraints that can reduce schedule flexibility</li>
+              <li><strong>Resource over-allocation</strong> - Identify periods where resources are assigned to multiple concurrent activities</li>
+              <li><strong>Excessive total float</strong> - Detect activities with unusually high float that may indicate logic gaps</li>
+            </ul>
+
+            <h2>Conclusion</h2>
+            <p>
+              Deltek Acumen Fuse is an invaluable tool for schedule analysis when used systematically. By following the metrics, processes, and best practices outlined in this guide, project teams can significantly improve their schedule quality and project outcomes.
+            </p>
+
+            <!-- Tags -->
+            <div class="article-tags">
+              <span class="tag">Schedule Analysis</span>
+              <span class="tag">Deltek Acumen</span>
+              <span class="tag">Project Controls</span>
+              <span class="tag">DCMA 14-Point</span>
+              <span class="tag">Schedule Quality</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Article Navigation -->
+      <section class="article-navigation">
+        <div class="container">
+          <div class="nav-content">
+            <a href="../../../pages/isg/blog.html" class="back-to-blog">
+              <i class="fas fa-arrow-left"></i>
+              <span>Back to Blog</span>
+            </a>
+            
+            <div class="share-article">
+              <span>Share this article:</span>
+              <div class="share-buttons">
+                <a href="#" class="share-btn linkedin" title="Share on LinkedIn">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="share-btn email" title="Share via Email">
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Related Articles Section -->
+      <section class="related-articles">
+        <div class="container">
+          <h2>Related Articles</h2>
+          <div class="related-grid">
+            <article class="related-article">
+              <div class="related-image">
+                <img src="../../../images/service-earned-value.jpg" alt="EVMS Implementation" />
+              </div>
+              <div class="related-content">
+                <h3><a href="evms-implementation-best-practices.html">Best Practices for EVMS Implementation</a></h3>
+                <p>Key success factors and common pitfalls to avoid in EVMS implementation.</p>
+                <div class="related-meta">
+                  <span>December 1, 2023</span>
+                  <span>12 min read</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Include footer -->
+    <div id="footer"></div>
+
+    <!-- Include floating contact button -->
+    <div id="floatingContact"></div>
+
+    <!-- Include contact form modals -->
+    <div id="generalContactModal"></div>
+
+    <!-- Load scripts -->
+    <script src="../../../js/main.js"></script>
+    <script src="../../../js/storage-helper.js"></script>
+    <script src="../../../js/content-cache.js"></script>
+    <script src="../../../js/loader.js"></script>
+    <script src="../../../js/modal.js"></script>
+
+    <!-- Article-specific scripts -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Share button functionality
+        initShareButtons();
+        
+        // Reading progress indicator
+        initReadingProgress();
+      });
+
+      function initShareButtons() {
+        const shareButtons = document.querySelectorAll('.share-btn');
+        const currentUrl = window.location.href;
+        const articleTitle = document.querySelector('.article-title').textContent;
+        
+        shareButtons.forEach(button => {
+          button.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            if (this.classList.contains('linkedin')) {
+              window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(currentUrl)}`, '_blank');
+            } else if (this.classList.contains('email')) {
+              window.location.href = `mailto:?subject=${encodeURIComponent(articleTitle)}&body=${encodeURIComponent('Check out this article: ' + currentUrl)}`;
+            }
+          });
+        });
+      }
+
+      function initReadingProgress() {
+        const progressBar = document.createElement('div');
+        progressBar.className = 'reading-progress';
+        document.body.appendChild(progressBar);
+        
+        window.addEventListener('scroll', function() {
+          const article = document.querySelector('.article-body-simple');
+          if (!article) return;
+          
+          const articleTop = article.offsetTop;
+          const articleHeight = article.offsetHeight;
+          const scrolled = window.scrollY - articleTop;
+          const progress = Math.min(Math.max(scrolled / articleHeight, 0), 1);
+          
+          progressBar.style.width = (progress * 100) + '%';
+        });
+      }
+    </script>
+  </body>
+</html>

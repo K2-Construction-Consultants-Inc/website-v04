@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>K2 Consulting</title>
+    <meta
+      name="description"
+      content="K2 Consulting - Excellence in Engineering, Security Screening, Project Management, Data Solutions, and Cybersecurity"
+    />
+
+    <!-- Favicons -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/site-icons/32_32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="images/site-icons/192_192.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/site-icons/180_180.png"
+    />
+
+    <style>
+      :root {
+        --primary-color: #13294b;
+        --accent-color: #fabc09;
+        --white: #ffffff;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          sans-serif;
+        background: linear-gradient(
+          135deg,
+          var(--primary-color) 0%,
+          #1a365d 100%
+        );
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--white);
+      }
+
+      .container {
+        text-align: center;
+        max-width: 600px;
+        padding: 2rem;
+      }
+
+      .logo {
+        width: 200px;
+        height: auto;
+        margin-bottom: 2rem;
+        filter: brightness(0) invert(1);
+      }
+
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        font-weight: 300;
+      }
+
+      .subtitle {
+        font-size: 1.2rem;
+        margin-bottom: 3rem;
+        opacity: 0.9;
+      }
+
+      .cta-button {
+        display: inline-block;
+        background: var(--accent-color);
+        color: var(--primary-color);
+        padding: 1rem 2rem;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: 600;
+        font-size: 1.1rem;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(250, 188, 9, 0.3);
+        margin: 0.5rem;
+      }
+
+      .cta-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(250, 188, 9, 0.4);
+      }
+
+      .cta-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 3rem;
+      }
+
+      .coming-soon {
+        margin-top: 3rem;
+        font-size: 0.9rem;
+        opacity: 0.7;
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 2rem;
+        }
+
+        .subtitle {
+          font-size: 1rem;
+        }
+
+        .logo {
+          width: 150px;
+        }
+
+        .cta-container {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .cta-button {
+          width: 100%;
+          max-width: 300px;
+          text-align: center;
+          margin: 0.5rem 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="images/logo-k2-consulting-white.svg"
+        alt="K2 Consulting"
+        class="logo"
+      />
+
+      <h1>K2 Consulting</h1>
+
+      <p class="subtitle">
+        Excellence in Engineering, Security Screening, Project Management, Data
+        Solutions, and Cybersecurity
+      </p>
+
+      <div class="cta-container">
+        <a href="pages/isg.html" class="cta-button">
+          Explore Integrated Solutions Group →
+        </a>
+
+        <a href="pages/ssg.html" class="cta-button">
+          Explore Security Screening Group →
+        </a>
+      </div>
+
+      <p class="coming-soon">
+        This is a development website. A full updated website is coming soon to
+        www.k2consulting.com. No content is currently published on this site for
+        the Security Screening Group (SSG) Visit our Integrated Solutions Group
+        (ISG) pages to learn about our services.
+      </p>
+    </div>
+  </body>
+</html>

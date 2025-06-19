@@ -1,0 +1,27 @@
+{
+  "stats": [
+    {
+      "value": 30,
+      "label": "Highly-Experienced Professionals",
+      "image": "images/stats-professionals.jpg",
+      "suffix": "+"
+    },
+    {
+      "value": 35,
+      "label": "Years of Professional Services Experience",
+      "image": "images/stats-experience.jpg",
+      "suffix": "+"
+    },
+    {
+      "value": 95,
+      "label": "Repeat Clients",
+      "image": "images/stats-clients.jpg",
+      "suffix": "%"
+    }
+  ],
+  "quote": {
+    "tagline": "K2: Performance Secured.",
+    "text": "K2 delivered again, ensuring the right framework, structure and implementation of scheduling… by contributing rapidly and early in the planning, design development and early works construction.",
+    "author": "Sr. Vice President, Aviation, for an Engineering News-Record (ENR) Top 15 Contractor"
+  }
+}

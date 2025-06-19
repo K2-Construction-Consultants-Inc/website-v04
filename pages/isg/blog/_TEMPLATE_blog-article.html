@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[ARTICLE TITLE] | Blog | Integrated Solutions Group</title>
+    <meta name="description" content="[ARTICLE DESCRIPTION - 150-160 characters for SEO]" />
+    <meta name="keywords" content="[COMMA SEPARATED KEYWORDS]" />
+    <meta name="article:published_time" content="[YYYY-MM-DD]T00:00:00Z" />
+    <meta name="article:section" content="[CATEGORY]" />
+    <meta name="article:tag" content="[PRIMARY TAG]" />
+    
+    <!-- Open Graph meta tags for social sharing -->
+    <meta property="og:title" content="[ARTICLE TITLE]" />
+    <meta property="og:description" content="[ARTICLE DESCRIPTION]" />
+    <meta property="og:image" content="../images/[FEATURED IMAGE].jpg" />
+    <meta property="og:url" content="https://k2consulting.com/blog/[FILENAME].html" />
+    <meta property="og:type" content="article" />
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/site-icons/32_32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="../images/site-icons/192_192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/site-icons/180_180.png" />
+    
+    <!-- Preload critical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/navigation.css" />
+    <link rel="stylesheet" href="../styles/breadcrumb.css" />
+    <link rel="stylesheet" href="../styles/blog.css" />
+    <link rel="stylesheet" href="../styles/modal.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Schema.org structured data for articles -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "[ARTICLE TITLE]",
+      "description": "[ARTICLE DESCRIPTION]",
+      "image": "https://k2consulting.com/images/[FEATURED IMAGE].jpg",
+      "publisher": {
+        "@type": "Organization",
+        "name": "K2 Consulting",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://k2consulting.com/images/logo-k2-consulting.svg"
+        }
+      },
+      "datePublished": "[YYYY-MM-DD]",
+      "dateModified": "[YYYY-MM-DD]",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://k2consulting.com/blog/[FILENAME].html"
+      }
+    }
+    </script>
+  </head>
+  <body data-page="blog-article" data-root-path="..">
+    <!-- Include centralized navigation -->
+    <div id="navigation"></div>
+
+    <!-- Hardcoded breadcrumb for this article -->
+    <div class="breadcrumb">
+      <div class="breadcrumb-container">
+        <ul class="breadcrumb-list">
+          <li class="breadcrumb-item">
+            <a href="https://www.k2consulting.com">Home</a>
+            <span class="breadcrumb-separator">/</span>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="../isg.html">Integrated Solutions Group</a>
+            <span class="breadcrumb-separator">/</span>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="../blog.html">Blog</a>
+            <span class="breadcrumb-separator">/</span>
+          </li>
+          <li class="breadcrumb-item">
+            [ARTICLE TITLE]
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <main>
+      <!-- Article Hero Section -->
+      <section class="article-hero">
+        <div class="article-hero-background">
+          <img src="../images/[FEATURED IMAGE].jpg" alt="[ALT TEXT]" />
+          <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="container">
+          <div class="article-hero-content">
+            <div class="article-category">
+              <i class="fas fa-[ICON]"></i>
+              <span>[CATEGORY]</span>
+            </div>
+            
+            <h1 class="article-title">[ARTICLE TITLE]</h1>
+            
+            <div class="article-meta">
+              <div class="meta-item">
+                <i class="fas fa-calendar"></i>
+                <span>[MONTH DAY, YEAR]</span>
+              </div>
+              <div class="meta-item">
+                <i class="fas fa-clock"></i>
+                <span>[X] min read</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Article Content -->
+      <article class="article-content">
+        <div class="container">
+          <div class="article-body-simple">
+            <!-- Simple Article Content - Easy to Update -->
+            <p class="lead-paragraph">
+              [OPENING PARAGRAPH - Brief introduction to the topic and what readers will learn]
+            </p>
+
+            <h2>[Section Heading]</h2>
+            <p>
+              [Content paragraph text goes here...]
+            </p>
+            <ul>
+              <li>[List item 1]</li>
+              <li>[List item 2]</li>
+              <li>[List item 3]</li>
+            </ul>
+
+            <h2>[Another Section Heading]</h2>
+            <p>
+              [More content...]
+            </p>
+            <ol>
+              <li><strong>Step 1:</strong> [Description]</li>
+              <li><strong>Step 2:</strong> [Description]</li>
+              <li><strong>Step 3:</strong> [Description]</li>
+            </ol>
+
+            <h2>Conclusion</h2>
+            <p>
+              [Concluding paragraph that summarizes key points and provides actionable takeaways]
+            </p>
+
+            <!-- Tags -->
+            <div class="article-tags">
+              <span class="tag">[Tag 1]</span>
+              <span class="tag">[Tag 2]</span>
+              <span class="tag">[Tag 3]</span>
+              <span class="tag">[Tag 4]</span>
+              <span class="tag">[Tag 5]</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Article Navigation -->
+      <section class="article-navigation">
+        <div class="container">
+          <div class="nav-content">
+            <a href="../blog.html" class="back-to-blog">
+              <i class="fas fa-arrow-left"></i>
+              <span>Back to Blog</span>
+            </a>
+            
+            <div class="share-article">
+              <span>Share this article:</span>
+              <div class="share-buttons">
+                <a href="#" class="share-btn linkedin" title="Share on LinkedIn">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="share-btn email" title="Share via Email">
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Related Articles Section -->
+      <section class="related-articles">
+        <div class="container">
+          <h2>Related Articles</h2>
+          <div class="related-grid">
+            <article class="related-article">
+              <div class="related-image">
+                <img src="../images/[RELATED IMAGE].jpg" alt="[ALT TEXT]" />
+              </div>
+              <div class="related-content">
+                <h3><a href="[RELATED ARTICLE FILENAME].html">[RELATED ARTICLE TITLE]</a></h3>
+                <p>[Brief description of related article]</p>
+                <div class="related-meta">
+                  <span>[Date]</span>
+                  <span>[X] min read</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Include footer -->
+    <div id="footer"></div>
+
+    <!-- Include floating contact button -->
+    <div id="floatingContact"></div>
+
+    <!-- Include contact form modals -->
+    <div id="generalContactModal"></div>
+
+    <!-- Load scripts -->
+    <script src="../js/main.js"></script>
+    <script src="../js/storage-helper.js"></script>
+    <script src="../js/content-cache.js"></script>
+    <script src="../js/loader.js"></script>
+    <script src="../js/modal.js"></script>
+
+    <!-- Article-specific scripts -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Share button functionality
+        initShareButtons();
+        
+        // Reading progress indicator
+        initReadingProgress();
+      });
+
+      function initShareButtons() {
+        const shareButtons = document.querySelectorAll('.share-btn');
+        const currentUrl = window.location.href;
+        const articleTitle = document.querySelector('.article-title').textContent;
+        
+        shareButtons.forEach(button => {
+          button.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            if (this.classList.contains('linkedin')) {
+              window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(currentUrl)}`, '_blank');
+            } else if (this.classList.contains('email')) {
+              window.location.href = `mailto:?subject=${encodeURIComponent(articleTitle)}&body=${encodeURIComponent('Check out this article: ' + currentUrl)}`;
+            }
+          });
+        });
+      }
+
+      function initReadingProgress() {
+        const progressBar = document.createElement('div');
+        progressBar.className = 'reading-progress';
+        document.body.appendChild(progressBar);
+        
+        window.addEventListener('scroll', function() {
+          const article = document.querySelector('.article-body-simple');
+          if (!article) return;
+          
+          const articleTop = article.offsetTop;
+          const articleHeight = article.offsetHeight;
+          const scrolled = window.scrollY - articleTop;
+          const progress = Math.min(Math.max(scrolled / articleHeight, 0), 1);
+          
+          progressBar.style.width = (progress * 100) + '%';
+        });
+      }
+    </script>
+  </body>
+</html> 
